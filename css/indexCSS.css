@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-*{
+* {
     font-family: 'Comfortaa', cursive;
     padding: 0px;
     margin: 0px;
@@ -28,11 +28,10 @@ body {
     background-image: linear-gradient(rgb(253, 232, 131), rgb(248, 128, 0), rgb(247, 247, 238), rgb(251, 153, 15));
 }
 
-header{
+header {
     top: 0;
     left: 0;
-    width: 100%;  
-    
+    width: 100%;
 }
 
 
@@ -41,10 +40,10 @@ h1 {
     background-color: var(--sixth-color);
     grid-template-rows: 1;
     justify-content: center;
-  }
+}
 
 #navbar {
-    padding-top: 50px;
+    padding-top: 10px;
     padding-left: 0px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -66,7 +65,7 @@ h1 {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-position: center;
+    background-position: top;
     opacity: .8;
 }
 
@@ -108,8 +107,7 @@ h1 {
 
 footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    /* gap: 450px; */
-
+    background-color: var(--sixth-color);
 }

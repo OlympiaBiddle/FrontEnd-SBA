@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,50 +8,49 @@
     <link rel="stylesheet" type="text/css" href="../css/loginCSS.css">
     <title>Login</title>
     <style>
-        a{
+        a {
             color: rgb(247, 247, 238);
         }
     </style>
 </head>
+
 <body>
     <header>
-            <ul id="navbar">
-                <a href="" alt="Login">Login</a>
-                <a href="" alt="Menu">Menu</a>
-                <a href="" alt="Contact Us">Contact Us</a>
-            </ul>
-            </header>
+        <h1>Breakfast On Us</h1>
 
-            <div class="container">
-                <div id="Login">
-                    <main>
-                        <section id="loginBody">
-                            <h1>Welcome Back</h1>
-                            <form action="index.html">
-                                <!-- username -->
-                                <label for="username">Username: </label>
-                                <input type="text" id="username" name="username" placeholder="Type username"
-                                    pattern="^[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){8,20}[a-zA-Z0-9]$" 
-                                    title="Only contains alphanumeric characters, underscore and dot, and at least 8 or more characters"
-                                    required />
-                                <br />
-                                <!-- password -->
-                                <label for="password">Password: </label>
-                                <input type="text" id="password" name="password" placeholder="Type password"
-                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}"
-                                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
-                                    required />
-                                <br />
-                                <button type="submit">Login</button>
-                                <a href="./register.html" style="font-size:x-small"></p>Not registered?</a>
-                                
-                            </form>
-                        </section>
-        
-                    </main>
-                </div>
-            </div>
-        
+        <ul id="navbar">
+            <a href="" alt="Login">Login</a>
+            <a href="" alt="Menu">Menu</a>
+            <a href="" alt="Contact Us">Contact Us</a>
+        </ul>
+    </header>
+    <div class="container">
+        <div id="Login">
+            <main>
+                <section id="loginBody">
+                    <h1>Welcome Back</h1>
+                    <form action="index.html">
+                        <!-- username -->
+                        <label for="username">Username: </label>
+                        <input type="text" id="username" name="username" placeholder="Type username"
+                            pattern="^[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){8,20}[a-zA-Z0-9]$"
+                            title="Only contains alphanumeric characters, underscore and dot, and at least 8 or more characters"
+                            required />
+                        <br />
+                        <!-- password -->
+                        <label for="password">Password: </label>
+                        <input type="text" id="password" name="password" placeholder="Type password"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}"
+                            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required />
+                        <br />
+                        <button type="submit">Login</button>
+                        <a href="./register.html" style="font-size:x-small"></p>Not registered?</a>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
     </header>
     <footer id="footer">
         <div class="footer-location">
@@ -62,18 +62,22 @@
         <div class="footer-hours">
             <table>
                 <tr>
-                  <th>Hours of Operations</th>
+                    <th>Hours of Operations</th>
                 </tr>
                 <tr>
                     <td>Monday-Friday</td>
                     <td>6am-1pm</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <td>Saturday-Sunday</td>
                     <td>8am-1pm</td>
-                  </tr>
-                </table>
+                </tr>
+            </table>
+        </div>
+        <div class="contact-us">
+            <a href="../html/contact.html"> Contact Us</a>
         </div>
     </footer>
-</body> 
+</body>
+
 </html>

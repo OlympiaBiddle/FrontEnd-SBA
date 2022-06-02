@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../css/contactCSS.css">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Breakfast On Us</h1>
+        <div class="dalContainer">
+            <button id="lightmode" class="fa-solid fa-sun"></button>
+        </div>
+        <ul id="navbar">
+            <a href="" alt="Login">Login</a>
+            <a href="" alt="Menu">Menu</a>
+            <a href="" alt="Contact Us">Contact Us</a>
+        </ul>
+    </header>
+    <div class="container">
+
+        <span class="t"></span>
+        <span class="r"></span>
+        <span class="b"></span>
+        <span class="l"></span>
+
+        <div id="contact">
+            <main>
+                <section id="contactBody">
+                    <form action="">
+                        <label for="reason-select">Reason for contact:</label>
+                        <select name="reason" id="reason-select">
+                            <option value="">--Please choose an option--</option>
+                            <option value="suggestion">Suggestions</option>
+                            <option value="Bugs">Bugs/Fixes</option>
+                            <option value="login">Login Issues</option>
+                            <option value="reg">Registration Issue</option>
+                            <option value="inquiry">Inquires</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <br />
+                        <br />
+                        <textarea name="" id="user_comments" cols="50" rows="10" placeholder="Comment here">
+
+</textarea>
+                        <br />
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-location">
+            <p style="color:rgb(247, 247, 238)">Location:</p>
+            <p style="color:rgb(247, 247, 238)">1001 Broad Street</p>
+            <p style="color:rgb(247, 247, 238)">Philadelphia, PA 19107</p>
+            <p style="color:rgb(247, 247, 238)">(P): 215-XXX-XXXX</p>
+        </div>
+        <div class="footer-hours">
+            <table>
+                <tr>
+                    <th>Hours of Operations</th>
+                </tr>
+                <tr>
+                    <td>Monday-Friday</td>
+                    <td>6am-1pm</td>
+                </tr>
+                <tr>
+                    <td>Saturday-Sunday</td>
+                    <td>8am-1pm</td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact-us">
+            <a href="../html/contact.html"> Contact Us</a>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
