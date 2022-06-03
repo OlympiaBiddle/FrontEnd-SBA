@@ -109,11 +109,13 @@ label {
     font-weight: bold;
     color: rgb(243, 66, 9);
     display: inline-block;
-    width: 100px;
+    width: 125px;
 }
 
 h1 {
     color: rgb(243, 66, 9);
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 button {
@@ -141,4 +143,14 @@ footer {
     justify-content: space-between;
     background-color: var(--sixth-color);
 
+}
+
+th, td {
+    border-bottom: 1px solid var(--first-color);
+    padding: 2px;
+    text-align: left;
+  }
+
+  tr:hover {
+    background-color: var(--fifth-color);
 }

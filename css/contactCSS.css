@@ -28,7 +28,6 @@ body {
     background-image: linear-gradient(rgb(253, 232, 131), rgb(248, 128, 0),rgb(247, 247, 238), rgb(251, 153, 15));
 }
 
-
 header {
     top: 0;
     left: 0;
@@ -42,7 +41,7 @@ header h1 {
     grid-template-rows: 1;
     justify-content: center;
     color: var(--second-color);
-}
+  }
 
 .container {
     height: 800px;
@@ -53,7 +52,6 @@ header h1 {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 40% 20%/ 10% 40%;
-    margin-bottom: 15%;
 
 }
 
@@ -109,15 +107,19 @@ textarea {
     color: var(--sixth-color);
     font-size: large;
     resize: none;
+
 }
 
 label {
+
     font-weight: bold;
     color: rgb(243, 66, 9);
 }
 
 h1 {
     color: rgb(243, 66, 9);
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 button {
@@ -145,4 +147,21 @@ footer {
     justify-content: space-between;
     background-color: var(--sixth-color);
 
+}
+
+th,
+td {
+    border-bottom: 1px solid var(--first-color);
+    padding: 2px;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: var(--fifth-color);
+}
+
+.dalContainer {
+    
+    display: flex;
+    justify-content: flex-end;
 }

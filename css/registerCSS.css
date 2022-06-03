@@ -4,15 +4,16 @@
 *{
     font-family: 'Comfortaa', cursive;
     padding: 0px;
-    /* margin: 0px; */
+    margin: 0px;
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    color: var(--second-color);
 }
 
-.root {
+:root {
     --first-color: rgb(253, 232, 131);
     --second-color: rgb(247, 247, 238);
     --third-color: rgb(247, 209, 95);
@@ -25,8 +26,23 @@
 body {
     height: auto;
     width: auto;
-    background-image: linear-gradient(rgb(253, 232, 131), rgb(248, 128, 0), rgb(247, 247, 238), rgb(251, 153, 15));
+    background-image: linear-gradient(rgb(253, 232, 131), rgb(248, 128, 0),rgb(247, 247, 238), rgb(251, 153, 15));
 }
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+header h1 {
+    display: grid;
+    background-color: var(--sixth-color);
+    grid-template-rows: 1;
+    justify-content: center;
+    color: var(--second-color);
+  }
 
 .container {
     height: 800px;
@@ -66,8 +82,8 @@ footer {
 }
 
 #registerBody {
-    height: 480px;
-    width: 375px;
+    height: 475px;
+    width: 425px;
     border: 3px groove rgb(243, 66, 9);
     opacity: .9;
     background-image: linear-gradient(rgb(247, 247, 238), rgb(248, 128, 0));
@@ -100,7 +116,7 @@ input[type="email"] {
 }
 
 input[type="radio"] {
-    margin: 10px 0;
+     margin: 10px 0; 
     text-align: center;
     border: 3px groove rgb(243, 66, 9);
 }
@@ -109,7 +125,7 @@ label {
     font-weight: bold;
     color: rgb(243, 66, 9);
     display: inline-block;
-    width: 100px;
+    width: 150px;
 }
 
 legend {
@@ -119,6 +135,8 @@ legend {
 
 h1 {
     color: rgb(243, 66, 9);
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 button {
@@ -140,10 +158,19 @@ button:hover {
     color: rgb(243, 66, 9);
 }
 
-footer{
+footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    gap: 450px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    background-color: var(--sixth-color);
 
+}
+th, td {
+    border-bottom: 1px solid var(--first-color);
+    padding: 2px;
+    text-align: left;
+  }
+
+  tr:hover {
+    background-color: var(--fifth-color);
 }
