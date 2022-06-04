@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Prompt&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../css/registerCSS.css">
     <style>
         a{
@@ -20,12 +24,24 @@
 
 <body>
     <header>
-        <h1>Breakfast On Us</h1>
-        <ul id="navbar">
-            <a href="" alt="About Us">About Us</a>
-            <a href="" alt="Menu">Menu</a>
-            <a href="./html/login.html" alt="Login">Login</a>
-        </ul>
+        <h1>Mornings With Us</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" class="active"><strong>Home</strong></a>
+            <a href="./about.html"><strong> About Us</strong></a>
+            <a href="./login.html"><strong>Login</strong></a>
+            <div class="dropdown">
+              <button class="dropbtn"><strong>Menu</strong>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#"><strong>Platters</strong></a>
+                <a href="#"><strong>Sandwiches</strong></a>
+                <a href="#"><strong>Sides</strong></a>
+                <a href="#"><strong>Drinks</strong></a>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
     </header>
 
     <div class="container">
@@ -87,7 +103,7 @@
     </div>
     <footer id="footer">
         <div class="footer-location">
-            <p style="color:rgb(247, 247, 238)">Location:</p>
+            <p style="color:rgb(247, 247, 238)"> <strong> Location:</strong></p>
             <p style="color:rgb(247, 247, 238)">1001 Broad Street</p>
             <p style="color:rgb(247, 247, 238)">Philadelphia, PA 19107</p>
             <p style="color:rgb(247, 247, 238)">(P): 215-XXX-XXXX</p>
@@ -108,8 +124,14 @@
             </table>
         </div>
         <div class="contact-us">
-            <a href="../html/contact.html"> Contact Us</a>
+           <a href="../html/contact.html"><strong>Contact Us</strong> </a>
         </div>
+        <div class="socials">
+            <strong>Follow us on: </strong>
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+          </div>
     </footer>
 </body>
 

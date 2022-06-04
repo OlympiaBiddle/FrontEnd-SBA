@@ -5,18 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/indexCSS.css">
     <title>Index</title>
 </head>
 
 <body>
     <header>
-        <h1>Breakfast On Us</h1>
-        <ul id="navbar">
-            <a href="" alt="About Us">About Us</a>
-            <a href="" alt="Menu">Menu</a>
-            <a href="./html/login.html" alt="Login">Login</a>
-        </ul>
+        <h1>Mornings With Us</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" class="active"><strong>Home</strong></a>
+            <a href="#news"><strong> About Us</strong></a>
+            <a href="./html/login.html"><strong>Login</strong></a>
+            <div class="dropdown">
+              <button class="dropbtn"><strong>Menu</strong>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#"><strong>Platters</strong></a>
+                <a href="#"><strong>Sandwiches</strong></a>
+                <a href="#"><strong>Sides</strong></a>
+                <a href="#"><strong>Drinks</strong></a>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
     </header>
 
     <div class="container">
@@ -29,7 +45,7 @@
     
     <footer id="footer">
         <div class="footer-location">
-            <p style="color:rgb(247, 247, 238)">Location:</p>
+            <p style="color:rgb(247, 247, 238)"> <strong> Location:</strong></p>
             <p style="color:rgb(247, 247, 238)">1001 Broad Street</p>
             <p style="color:rgb(247, 247, 238)">Philadelphia, PA 19107</p>
             <p style="color:rgb(247, 247, 238)">(P): 215-XXX-XXXX</p>
@@ -50,9 +66,16 @@
             </table>
         </div>
         <div class="contact-us">
-            <a href="../html/contact.html"> Contact Us</a>
+           <a href="../html/contact.html"><strong>Contact Us</strong> </a>
         </div>
+        <div class="socials">
+            <strong>Follow us on: </strong>
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+          </div>
     </footer>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

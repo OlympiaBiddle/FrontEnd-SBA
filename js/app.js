@@ -1,15 +1,23 @@
-const lightmode = document.querySelector("#lightmode");
-const header = document.querySelector("header");
-const body = document.querySelector("body");
-const container = document.querySelector(".container");
 
-lightmode.addEventListener("click", function setLightMode() {
-
-    if (body.style.background == "linear-gradient(var(--first-color), var(--fifth-color), var(--second-color), var(--fourth-color))") {
-        body.style.background = "var(--first-color)";
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
     } else {
-        body.style.background = "linear-gradient(var(--first-color), var(--fifth-color), var(--second-color), var(--fourth-color))";
+      x.className = "topnav";
     }
+  }
 
-    console.log("click");
-});
+/* Form validation the Login page */
+
+function validateForm() {
+    let x = document.forms["loginForm"]["username"].value;
+    let y = document.forms["loginForm"]["password"].value;
+
+    if (x == "" || y == "") {
+      alert("Username and Password must be filled out");
+      return false;
+    }
+     
+  }

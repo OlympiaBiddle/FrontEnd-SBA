@@ -1,5 +1,9 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@font-face {
+    font-family: Carade;
+    src: url("../Font/Carade.otf");
+  }
 
 *{
     font-family: 'Comfortaa', cursive;
@@ -42,6 +46,7 @@ header h1 {
     grid-template-rows: 1;
     justify-content: center;
     color: var(--second-color);
+    font-family: Carade;
   }
 
 .container {
@@ -56,37 +61,134 @@ header h1 {
 
 }
 
-#navbar {
-    padding-top: 50px;
-    padding-left: 0px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: left;
-}
-
-#navbar>* {
-
-    background: rgb(243, 66, 9);
-    color: rgb(247, 209, 95);
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: var(--sixth-color);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: var(--second-color);
+    text-align: center;
+    padding: 10px 12px;
     text-decoration: none;
-    font-size: x-large;
-    margin: 10px 10px;
-}
-
-#navbar>*:hover {
-    color: rgb(251, 153, 15);
-}
+    /* font-size: 17px; */
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    /* font-size: 17px; */
+    border: none;
+    outline: none;
+    color: var(--second-color);
+    padding: 10px 12px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 0%;
+    transform: none;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--sixth-color);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px (var(--fourth-color),0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: var(--first-color);
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--first-color);
+    color: var(--sixth-color);
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: var(--second-color);
+    color: var(--fifth-color);
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
 
 footer {
-    color: rgb(219, 233, 245);
+    color: var(--second-color);
 }
 
 #registerBody {
     height: 475px;
     width: 425px;
-    border: 3px groove rgb(243, 66, 9);
+    border: 3px groove var(--sixth-color);
     opacity: .9;
-    background-image: linear-gradient(rgb(247, 247, 238), rgb(248, 128, 0));
+    background-image: linear-gradient(var(--second-color), var(--fifth-color));
     border-radius: 10%;
     padding-left: 10px;
     text-align: center;
@@ -94,9 +196,9 @@ footer {
 }
 
 #Register {
-    top: 50%;
+    top: 75%;
     left: 50%;
-    position: fixed;
+    position: absolute;
     transform: translate(-50%, -50%);
 
 }
@@ -105,48 +207,48 @@ input[type="text"] {
     color: black;
     margin: 10px 0;
     text-align: center;
-    border: 3px groove rgb(243, 66, 9);
+    border: 3px groove var(--sixth-color));
 }
 
 input[type="email"] {
     color: black;
     margin: 10px 0;
     text-align: center;
-    border: 3px groove rgb(243, 66, 9);
+    border: 3px groove var(--sixth-color);
 }
 
 input[type="radio"] {
      margin: 10px 0; 
     text-align: center;
-    border: 3px groove rgb(243, 66, 9);
+    border: 3px groove var(--sixth-color);
 }
 
 label {
     font-weight: bold;
-    color: rgb(243, 66, 9);
+    color: var(--sixth-color);
     display: inline-block;
-    width: 150px;
+    width: 125px;
 }
 
 legend {
     font-weight: bold;
-    color: rgb(243, 66, 9);
+    color: var(--sixth-color);
 }
 
 h1 {
-    color: rgb(243, 66, 9);
+    color: var(--sixth-color);
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
 button {
     margin-top: 10px;
-    background-color: rgb(248, 128, 0);
-    border: 3px groove rgb(243, 66, 9);
+    background-color: var(--fifth-color);
+    border: 3px groove var(--sixth-color);
     border-radius: 15%;
     padding: 10px 10px;
     font-size: medium;
-    color: rgb(247, 209, 95);
+    color: var(--third-color);
     transition-property: width height background-color font-size left top;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -154,13 +256,13 @@ button {
 
 button:hover {
     transform: rotate(360deg);
-    background-color: rgb(247, 247, 238);
-    color: rgb(243, 66, 9);
+    background-color: var(--second-color);
+    color: var(--sixth-color);
 }
 
 footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     background-color: var(--sixth-color);
 
