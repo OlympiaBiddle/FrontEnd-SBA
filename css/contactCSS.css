@@ -31,7 +31,7 @@
 body {
     height: auto;
     width: auto;
-    background-image: linear-gradient(rgb(253, 232, 131), rgb(248, 128, 0), rgb(247, 247, 238), rgb(251, 153, 15));
+    background-image: linear-gradient(var(--first-color), var(--fifth-color), var(--second-color), var(--fourth-color));;
 }
 
 header {
@@ -183,9 +183,9 @@ header h1 {
 #contactBody {
     height: 320px;
     width: 575px;
-    border: 3px groove rgb(243, 66, 9);
+    border: 3px groove  var(--sixth-color);
     opacity: .9;
-    background-image: linear-gradient(rgb(247, 247, 238), rgb(248, 128, 0));
+    background-image: linear-gradient(var(--second-color), var(--fifth-color));
     border-radius: 10%;
     padding-left: 10px;
     padding-right: 10px;
@@ -218,7 +218,7 @@ textarea {
 label {
     font-size: large;
     font-weight: bold;
-    color: rgb(243, 66, 9);
+    color:  var(--sixth-color);
 }
 
 option{
@@ -226,19 +226,19 @@ option{
 }
 
 h1 {
-    color: rgb(243, 66, 9);
+    color:  var(--sixth-color);
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
 button {
     margin-top: 10px;
-    background-color: rgb(248, 128, 0);
-    border: 3px groove rgb(243, 66, 9);
+    background-color: var(--fifth-color);
+    border: 3px groove  var(--sixth-color);
     border-radius: 15%;
     padding: 10px 10px;
     font-size: medium;
-    color: rgb(247, 209, 95);
+    color: var(--third-color);
     transition-property: width height background-color font-size left top;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -246,8 +246,8 @@ button {
 
 button:hover {
     transform: rotate(360deg);
-    background-color: rgb(247, 247, 238);
-    color: rgb(243, 66, 9);
+    background-color: var(--second-color);
+    color:  var(--sixth-color);
 }
 
 footer {

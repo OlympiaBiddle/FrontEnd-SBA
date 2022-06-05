@@ -8,13 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Prompt&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../css/registerCSS.css">
     <style>
-        a{
+        a {
             color: rgb(247, 247, 238);
             text-decoration: none;
         }
@@ -30,18 +27,18 @@
             <a href="./about.html"><strong> About Us</strong></a>
             <a href="./login.html"><strong>Login</strong></a>
             <div class="dropdown">
-              <button class="dropbtn"><strong>Menu</strong>
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#"><strong>Platters</strong></a>
-                <a href="#"><strong>Sandwiches</strong></a>
-                <a href="#"><strong>Sides</strong></a>
-                <a href="#"><strong>Drinks</strong></a>
-              </div>
+                <button class="dropbtn"><strong>Menu</strong>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#"><strong>Platters</strong></a>
+                    <a href="#"><strong>Sandwiches</strong></a>
+                    <a href="#"><strong>Sides</strong></a>
+                    <a href="#"><strong>Drinks</strong></a>
+                </div>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-          </div>
+        </div>
     </header>
 
     <div class="container">
@@ -49,15 +46,26 @@
             <main>
                 <section id="registerBody">
                     <h1>Registration</h1>
-                    <form action="index.html">
-                        <!-- FullName -->
-                        <label for="Full Name">Full Name:</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="Type full name"
+                    <form>
+                        <!-- firstName -->
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Type first name "
                             pattern="^[a-zA-Z\s]{10,30}$" required />
+                        <br />
+                        <!-- lastName -->
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Type last name"
+                            pattern="^[a-zA-Z\s]{10,30}$" required />
+                        <br />
+                        <!-- DOB -->
+                        <label for="birthday">Birthday:</label>
+                        <input type="text" id="birthday" name="birthday" placeholder="mm/dd/yyyy"
+                            pattern="^(0[1-9]|1[012])[-/.](0[1-9]|[12][0-9]|3[01])[-/.](19|20)\\d\\d$"
+                            title="Must be mm/dd/yyyy" required />
                         <br />
                         <!-- Email -->
                         <label for="email">Email:</label>
-                        <input type="email" name="email" lang="en" maxlength="254" value=""
+                        <input type="email" id="email" name="email" lang="en" maxlength="254" value=""
                             placeholder="example@domain.com" autocapitalize="off" spellcheck="false" autocorrect="off"
                             autocomplete="on" required="" inputmode="email"
                             pattern="(?![_.-])((?![_.-][_.-])[a-zA-Z\d_.-]){0,63}[a-zA-Z\d]@((?!-)((?!--)[a-zA-Z\d-]){0,63}[a-zA-Z\d]\.){1,2}([a-zA-Z]{2,14}\.)?[a-zA-Z]{2,14}">
@@ -72,34 +80,22 @@
                         <!-- password -->
                         <label for="password">Password:</label>
                         <input type="text" id="password" name="password" placeholder="Type password"
-                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            pattern="^[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){6,18}[a-zA-Z0-9]$"
                             title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
                             required />
                         <br />
 
-                        <legend>Select an age group:</legend>
 
-                        <div>
-                            <!-- Age -->
-                            <div>
-                                <input type="radio" id="age21" name="age" value="young">
-                                <label for="age21">16-21</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="age30" name="age" value="midLife">
-                                <label for="age30">21-30</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="age31" name="age" value="old">
-                                <label for="age31">30 &^</label>
-                            </div>
-                        </div>
-                        <button type="submit">Register</button>
-                    </form>
-                </section>
-
-            </main>
+                        <button id="btn">Register</button>
+                        <!-- <div id="msg">
+                            <pre></pre>
+                        </div> -->
         </div>
+        </form>
+        </section>
+
+        </main>
+    </div>
     </div>
     <footer id="footer">
         <div class="footer-location">
@@ -124,15 +120,17 @@
             </table>
         </div>
         <div class="contact-us">
-           <a href="../html/contact.html"><strong>Contact Us</strong> </a>
+            <a href="../html/contact.html"><strong>Contact Us</strong> </a>
         </div>
         <div class="socials">
             <strong>Follow us on: </strong>
             <a href="https://www.facebook.com" class="fa fa-facebook"></a>
             <a href="https://www.twitter.com" class="fa fa-twitter"></a>
             <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
-          </div>
+        </div>
     </footer>
+    <!-- Place user input into customer collection -->
+    <script src="../js/customer.js"></script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@
         <h1>Mornings With Us</h1>
         <div class="topnav" id="myTopnav">
             <a href="../index.html" class="active"><strong>Home</strong></a>
-            <a href="./"><strong> About Us</strong></a>
+            <a href="./about.html"><strong> About Us</strong></a>
             <a href="./login.html"><strong>Login</strong></a>
             <div class="dropdown">
                 <button class="dropbtn"><strong>Menu</strong>
@@ -41,22 +41,22 @@
             <main>
                 <section id="loginBody">
                     <h1>Welcome Back</h1>
-                    <form name="loginForm" action="../index.html" onsubmit="return validateForm()">
+                    <form name="loginForm" onsubmit="return validateForm()">
                         <!-- username -->
                         <label for="username">Username: </label>
                         <input type="text" id="username" name="username" placeholder="Type username"
                             pattern="^[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){8,20}[a-zA-Z0-9]$"
                             title="Only contains alphanumeric characters, underscore and dot, and at least 8 or more characters"
-                            required />
+                             />
                         <br />
                         <!-- password -->
                         <label for="password">Password: </label>
                         <input type="text" id="password" name="password" placeholder="Type password"
                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}"
                             title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
-                            required />
+                             />
                         <br />
-                        <button type="submit">Login</button>
+                        <button id="btn"  type="submit">Login</button>
                         <a href="./register.html" style="font-size:x-small"></p>Not registered?</a>
                     </form>
                 </section>
@@ -96,7 +96,7 @@
             <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
         </div>
     </footer>
-    <script src="../js/app.js"></script>
+   <script src="../js/app.js"></script>
 </body>
 
 </html>

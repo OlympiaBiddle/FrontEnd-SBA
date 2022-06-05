@@ -30,7 +30,7 @@
 body {
     height: auto;
     width: auto;
-    background-image: linear-gradient(rgb(253, 232, 131), rgb(248, 128, 0),rgb(247, 247, 238), rgb(251, 153, 15));
+    background-image: linear-gradient(var(--first-color), var(--fifth-color), var(--second-color), var(--fourth-color));
 }
 
 header {
@@ -204,14 +204,14 @@ footer {
 }
 
 input[type="text"] {
-    color: black;
+    color: var(--sixth-color);
     margin: 10px 0;
     text-align: center;
-    border: 3px groove var(--sixth-color));
+    border: 3px groove var(--sixth-color);
 }
 
 input[type="email"] {
-    color: black;
+    color: var(--sixth-color);
     margin: 10px 0;
     text-align: center;
     border: 3px groove var(--sixth-color);
@@ -221,6 +221,7 @@ input[type="radio"] {
      margin: 10px 0; 
     text-align: center;
     border: 3px groove var(--sixth-color);
+    accent-color: var(--sixth-color);
 }
 
 label {
@@ -267,6 +268,7 @@ footer {
     background-color: var(--sixth-color);
 
 }
+
 th, td {
     border-bottom: 1px solid var(--first-color);
     padding: 2px;
