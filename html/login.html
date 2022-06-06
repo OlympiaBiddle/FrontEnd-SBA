@@ -1,23 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/loginCSS.css">
     <title>Login</title>
-    <style>
-        a {
-            color: rgb(247, 247, 238);
-        }
-    </style>
+    <link rel="stylesheet" href="../css/loginCss.css">
 </head>
-
 <body>
     <header>
+    <!-- Logo -->
         <h1>Mornings With Us</h1>
+        <!-- Navagation Bar -->
         <div class="topnav" id="myTopnav">
             <a href="../index.html" class="active"><strong>Home</strong></a>
             <a href="./about.html"><strong> About Us</strong></a>
@@ -36,34 +27,30 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
     </header>
+<!-- Login Container -->
     <div class="container">
-        <div id="Login">
-            <main>
-                <section id="loginBody">
-                    <h1>Welcome Back</h1>
-                    <form name="loginForm" onsubmit="return validateForm()">
-                        <!-- username -->
-                        <label for="username">Username: </label>
-                        <input type="text" id="username" name="username" placeholder="Type username"
-                            pattern="^[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){8,20}[a-zA-Z0-9]$"
-                            title="Only contains alphanumeric characters, underscore and dot, and at least 8 or more characters"
-                             />
-                        <br />
-                        <!-- password -->
-                        <label for="password">Password: </label>
-                        <input type="text" id="password" name="password" placeholder="Type password"
-                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}"
-                            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
-                             />
-                        <br />
-                        <button id="btn"  type="submit">Login</button>
-                        <a href="./register.html" style="font-size:x-small"></p>Not registered?</a>
-                    </form>
-                </section>
-            </main>
-        </div>
+        <form id="Login" class="form">
+            <h1>Welcome Back</h1>
+            <div class="form-field">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <br />
+                <button id="btn"  type="submit">Login</button>
+                <a href="./register.html" style="font-size:x-small"></p>Not registered?</a>
+            </div>
+        </form>
     </div>
-    </header>
+
+<!-- Footer -->
     <footer id="footer">
         <div class="footer-location">
             <p style="color:rgb(247, 247, 238)"> <strong> Location:</strong></p>
@@ -96,7 +83,8 @@
             <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
         </div>
     </footer>
-   <script src="../js/app.js"></script>
+
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
